@@ -1,0 +1,37 @@
+{
+    "rule_set": [
+        {
+            "download_detour": "direct",
+            "format": "binary",
+            "tag": "antizapret",
+            "type": "remote",
+            "url": "https://github.com/savely-krasovsky/antizapret-sing-box/releases/latest/download/antizapret.srs"
+        }
+    ],
+    "rules": [
+        {
+            "domain_suffix": [
+                ".ru"
+            ],
+            "outbound": "direct"
+        },
+        {
+            "domain_keyword": [
+                "twitch",
+                "youtube",
+                "vk",
+                "utweb",
+                "yandex",
+                "yastatic"
+            ],
+            "outbound": "direct"
+        },
+        {
+            "outbound": "direct",
+            "process_name": [
+                "steam",
+                "discord"
+            ]
+        }
+    ]
+}
