@@ -1,0 +1,21 @@
+[DEFAULT]
+# Basic configuration
+bantime  = 3600        # 1 hour ban time for most jails
+findtime = 600         # Time window for finding multiple failures (10 minutes)
+maxretry = 3           # Max retries before banning
+ignoreip = 127.0.0.1/8 185.233.82.136  # Your IP and localhost
+
+# Log settings
+logtarget = /var/log/fail2ban.log  # Fail2Ban log file
+loglevel = INFO                    # Log level for Fail2Ban
+
+# SSH protection
+[sshd]
+enabled  = true
+port     = ssh
+protocol = tcp
+filter   = sshd
+logpath  = /var/log/auth.log
+maxretry = 3
+bantime  = 86400  # 24-hour ban for SSH brute force
+findtime = 600    # 10-minute window

@@ -1,0 +1,3 @@
+username=myuser
+password=mypassword
+ssh=/path/to/ssh_key
