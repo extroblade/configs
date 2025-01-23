@@ -13,11 +13,12 @@
             "domain_suffix": [
                 ".ru"
             ],
-            "outbound": "direct"
+            "outbound": "bypass"
         },
         {
             "domain_keyword": [
                 "twitch",
+                "steamserver",
                 "ttvnw",
                 "youtube",
                 "vk",
@@ -25,13 +26,22 @@
                 "yandex",
                 "yastatic"
             ],
-            "outbound": "direct"
+            "outbound": "bypass"
         },
         {
-            "outbound": "direct",
+            "outbound": "bypass",
             "process_name": [
                 "steam",
-                "discord"
+                "dota2.exe",
+                "Dota 2",
+                "cs2",
+                "RainbowSix"
+            ]
+        },
+        {
+            "outbound": "proxy",
+            "process_name": [
+                "Discord.exe"
             ]
         }
     ]
