@@ -31,17 +31,9 @@
         {
             "outbound": "bypass",
             "process_name": [
-                "steam",
                 "dota2.exe",
-                "Dota 2",
-                "cs2",
-                "RainbowSix"
-            ]
-        },
-        {
-            "outbound": "proxy",
-            "process_name": [
-                "Discord.exe"
+                "cs2.exe",
+                "RainbowSix.exe"
             ]
         }
     ]
