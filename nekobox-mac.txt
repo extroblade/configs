@@ -1,0 +1,22 @@
+[
+        {
+            "domain_suffix": [
+                ".ru"
+            ],
+            "outbound": "direct"
+        },
+        {
+            "domain_keyword": [
+                "twitch",
+                "steamserver",
+                "ttvnw",
+                "youtube",
+                "vk",
+                "utweb",
+                "yandex",
+                "yastatic",
+                "ruform"
+            ],
+            "outbound": "direct"
+        }
+]
