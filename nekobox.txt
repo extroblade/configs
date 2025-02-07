@@ -21,7 +21,6 @@
                 "twitch",
                 "steamserver",
                 "ttvnw",
-                "youtube",
                 "vk",
                 "utweb",
                 "yandex",
@@ -34,7 +33,15 @@
             "process_name": [
                 "dota2.exe",
                 "cs2.exe",
-                "RainbowSix.exe"
+                "RainbowSix.exe",
+                "steam.exe"
+            ]
+        },
+        {
+            "outbound": "bypass",
+            "process_path": [
+                "C:\\Program Files (x86)\\Steam\\steamapps\\common\\*",
+                "C:\\SteamLibrary\\steamapps\\common\\*"
             ]
         }
     ]
